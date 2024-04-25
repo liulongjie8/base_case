@@ -1,4 +1,4 @@
-package com.completablefuture.common;
+package com.base.parent.response;
 
 import lombok.Data;
 
@@ -12,7 +12,6 @@ import java.io.Serializable;
  * @Version: 1.0
  */
 @Data
-//@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class ResponseResult<T> implements Serializable {
     private static final long serialVersionUID = -7041378341503655096L;
     private String code;

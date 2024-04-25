@@ -1,12 +1,10 @@
 package com.completablefuture.web;
-
-import org.lls.common.ResponseResult;
-import org.lls.service.OrderService;
-import org.lls.service.UserService;
+import com.base.parent.response.ResponseResult;
+import com.completablefuture.service.OrderService;
+import com.completablefuture.service.UserService;
 import org.springframework.util.StopWatch;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import javax.annotation.Resource;
 import java.util.concurrent.CompletableFuture;
 

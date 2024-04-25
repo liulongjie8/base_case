@@ -25,6 +25,7 @@
     <modules>
         <module>completablefuture</module>
         <module>redis</module>
+        <module>web-common</module>
     </modules>
     <dependencyManagement>
          <dependencies>
