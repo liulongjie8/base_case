@@ -21,11 +21,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springboot-version>2.1.2.RELEASE</springboot-version>
         <lombok-version>1.18.8</lombok-version>
+        <redis-version>2.1.2.RELEASE</redis-version>
+        <hutool-verison>5.8.26</hutool-verison>
+        <redisson-version>3.23.4</redisson-version>
+        <aspectj-version>1.9.7</aspectj-version>
+        <commons-lang3-version>3.9</commons-lang3-version>
     </properties>
     <modules>
         <module>completablefuture</module>
         <module>redis</module>
         <module>web-common</module>
+        <module>base-common</module>
     </modules>
     <dependencyManagement>
          <dependencies>
@@ -50,6 +56,45 @@
                  <artifactId>lombok</artifactId>
                  <version>${lombok-version}</version>
              </dependency>
+
+
+
+             <!--- redis -->
+             <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
+             <dependency>
+                 <groupId>org.springframework.boot</groupId>
+                 <artifactId>spring-boot-starter-data-redis</artifactId>
+                 <version>${redis-version}</version>
+             </dependency>
+
+             <dependency>
+                 <groupId>org.redisson</groupId>
+                 <artifactId>redisson-spring-boot-starter</artifactId>
+                 <version>${redisson-version}</version>
+             </dependency>
+
+             <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+             <dependency>
+                 <groupId>cn.hutool</groupId>
+                 <artifactId>hutool-all</artifactId>
+                 <version>${hutool-verison}</version>
+             </dependency>
+
+
+             <dependency>
+                 <groupId>org.apache.commons</groupId>
+                 <artifactId>commons-lang3</artifactId>
+                 <version>${commons-lang3-version}</version>
+             </dependency>
+
+             <dependency>
+                 <groupId>org.aspectj</groupId>
+                 <artifactId>aspectjweaver</artifactId>
+                 <version>${aspectj-version}</version>
+             </dependency>
+
+
+
          </dependencies>
     </dependencyManagement>
 
